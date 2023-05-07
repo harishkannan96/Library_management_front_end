@@ -87,6 +87,21 @@ ul{
     color: white;
     margin-left: 8px;
 }
+
+.footer-col h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 300;
+    color:gray;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col h5:hover{
+    color: white;
+    margin-left: 8px;
+}
 .footer-col .social-links a{
     display: inline-block;
     height: 40px;
