@@ -115,7 +115,7 @@ const defaultImage = '<img class="cover-image" src="https://i.pinimg.com/736x/83
 function getbooks(){
     // Fetch data from the Open Library API using the search query entered by the user
     document.getElementById('loader').style.display = 'block';
-    fetch("http://openlibrary.org/search.json?q=sports")
+    fetch("https://openlibrary.org/search.json?q=sports")
     // Convert the response to JSON format
     .then(a=>a.json())
 
@@ -128,7 +128,7 @@ function getbooks(){
             if(author_name && title && publish_year && isbn){
                 fetchedBooks.push([title, author_name[0] || "--", publish_year[0] || "--",
                 isbn[0] ? 
-                `<img class="cover-image" src=${"http://covers.openlibrary.org/b/isbn/" + isbn[0] + "-M.jpg"} 
+                `<img class="cover-image" src=${"https://covers.openlibrary.org/b/isbn/" + isbn[0] + "-M.jpg"} 
                 title=${title}/>` : defaultImage
             ])
             }
